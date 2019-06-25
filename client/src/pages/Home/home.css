@@ -1,0 +1,16 @@
+.homeContainer {
+  width: 70%;
+  margin: 2% auto 2% auto;
+}
+.topMar{
+  margin-top: 20px;
+}
+label {
+  margin-bottom: 0;
+}
+.form-control {
+  border: none;
+  border-bottom: 1px solid lightslategray;
+  border-radius: 0;
+  transition: none;
+}
