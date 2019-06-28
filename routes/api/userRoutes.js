@@ -11,4 +11,8 @@ router
   .route("/login")
   .post(apiController.findUser);
 
+router
+  .route("/:id")
+  .get(apiController.findById);
+
 module.exports = router;

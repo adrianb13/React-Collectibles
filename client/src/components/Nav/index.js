@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import "./Nav.css";
 
 function Nav(props) {
   return (
   <div> 
-    <nav className="navbar navbar-dark bg-dark">
+    <nav className="navbar navbar-dark bg">
       <div className="container-fluid">
         <div className="navbar-header">
           <Link to="/" className="navbar-brand">Collectibles Manager</Link>
@@ -18,7 +19,7 @@ function Nav(props) {
           ) : (
             <div>
               <Link to="/register">
-                <button color="inherit" className="btn btn-dark">Register</button>
+                <button color="inherit" className="btn btn-dark rmgn">Register</button>
               </Link>
               <Link to="/">
                 <button color="inherit" className="btn btn-dark">Login</button>

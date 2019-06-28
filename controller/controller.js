@@ -44,6 +44,17 @@ module.exports = {
     })
     .catch(err => console.log(err)); 
   },
+  findById: (req, res) => {
+    db.User
+      .findOne({
+        where: {id: req.params.id},
+        include: [{
+          model: db.Collectible
+        }]
+      })
+      .then(dbUser => res.json(dbUser))
+      .catch(err => res.status(422).json(err));
+  },
   createUser: (req, res) => {
     db.User
       .create({
@@ -86,16 +97,16 @@ module.exports = {
         value: req.body.value,
         serNum: req.body.serNum,
         description: req.body.description,
-        userId: req.body.userId
+        UserId: req.body.UserId
       })
       .then(collectibles => res.json(collectibles))
       .catch(err => res.status(422).json(err));
   },
   updateCollectible: (req, res) => {
     db.Collectible
-      .update({
+      .update(req.body, {
         where: { id: req.params.id}
-      }, req.body)
+      })
       .then(dbCollectible => res.json(dbCollectible))
       .catch(err => res.status(422).json(err));
   },

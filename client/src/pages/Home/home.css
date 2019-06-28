@@ -1,9 +1,11 @@
 .homeContainer {
-  width: 70%;
+  width: 60%;
+  background: white;
+  border-radius: 50px;
   margin: 2% auto 2% auto;
 }
 .topMar{
-  margin-top: 20px;
+  margin-top: 10px;
 }
 label {
   margin-bottom: 0;
@@ -13,4 +15,8 @@ label {
   border-bottom: 1px solid lightslategray;
   border-radius: 0;
   transition: none;
+}
+.ctr {
+  text-align: center;
+  margin: 0 auto 0 auto;
 }

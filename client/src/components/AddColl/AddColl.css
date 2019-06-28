@@ -1,0 +1,53 @@
+.box2 {
+  border: 2px solid purple;
+  background: white;
+  padding-top: 5px;
+  margin: 20px auto 30px auto;
+  width: 70%;
+  height: auto;
+}
+.spc {
+  margin: 10px 0 10px 0;
+}
+.bdr2 {
+  border-bottom: 1px solid purple;
+}
+.wid3 {
+  width: 100%;
+}
+.wid2 {
+  width: 100%;
+}
+.mgn {
+  margin: -5px 0 5px 0;
+}
+.inp {
+  border: none;
+  border-bottom: 1px solid #777777;
+}
+.lmgn {
+  margin-left: 10px;
+}
+.ctr {
+  text-align: center;
+  margin-top: 5px;
+}
+textarea {
+  word-break: break-word;
+}
+.btnw {
+  min-width: 150px;
+  margin-bottom: 20px;
+}
+.btnw2 {
+  margin: 0 0 20px 10px;
+}
+
+@media (max-width: 769px) {
+  .mgn {
+    margin: 5px 0 5px 0;
+  }
+  .box2 {
+    width: 80%;
+  }
+}

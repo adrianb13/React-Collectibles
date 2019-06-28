@@ -27,15 +27,15 @@ export default {
   },
 
   getCollectible: (collId) => {
-    return axios.get("/api/collectible/" + collId);
+    return axios.get("/api/collectibles/" + collId);
   },
   addCollectible: (coll) => {
     return axios.post("/api/collectibles", coll)
   },
-  updateCollectible: (id, coll) => {
-    return axios.put("/api/collectibles/" + id, coll)
+  updateCollectible: (coll) => {
+    return axios.put("/api/collectibles/"+coll.id, coll)
   },
   deleteCollectible: (collId) => {
-    return axios.delete("/api/collectibles" + collId);
+    return axios.delete("/api/collectibles/" + collId);
   }
 };

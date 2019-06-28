@@ -8,6 +8,7 @@ import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import Register from "./pages/Register";
 import Hello from "./pages/Hello";
+import Details from "./pages/Details";
 import NoMatch from "./pages/NoMatch/NoMatch";
 
 
@@ -16,12 +17,16 @@ class App extends Component {
     id: "",
     firstName: "",
     lastName: "",
-    email: "",
-    password: "",
+    email: "adrianb13@yahoo.com",
+    password: "password",
     confPass: "",
     collection: [],
     loggedIn: false
   };
+
+  componentDidMount() {
+    this.getUser();
+  }
 
 // Pulls Existing User When Logging In
   getUser = () => {
@@ -103,7 +108,7 @@ class App extends Component {
         collection: res.data.Collectibles
       })
     })
-    .catch(err => console(err))
+    .catch(err => console.log(err))
   }
 
   authenticated = () => {
@@ -160,6 +165,16 @@ class App extends Component {
                 loggedIn={this.state.loggedIn}
                 firstName={this.state.firstName}
                 collection={this.state.collection}
+                userId={this.userId}
+              />)}
+            />
+            <Route exact path="/collectibles/:id" render={(props) => (
+              <Details
+                loggedIn={this.state.loggedIn}
+                collection={this.state.collection}
+                handleInputChange={this.handleInputChange}
+                userId={this.userId}
+                {...props}
               />)}
             />
             <Route component={NoMatch} />
