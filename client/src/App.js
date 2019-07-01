@@ -17,15 +17,15 @@ class App extends Component {
     id: "",
     firstName: "",
     lastName: "",
-    email: "adrianb13@yahoo.com",
-    password: "password",
+    email: "",
+    password: "",
     confPass: "",
     collection: [],
     loggedIn: false
   };
 
   componentDidMount() {
-    this.getUser();
+//    this.getUser();
   }
 
 // Pulls Existing User When Logging In
