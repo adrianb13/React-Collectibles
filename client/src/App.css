@@ -1,10 +1,15 @@
+.backer {
+  background: url("./assets/img/Collectibles.jpg");
+  background-size: 100% auto;
+}
 .center {
   text-align: center;
   padding-top: 20px;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 10px auto;
 }
 .cenText {
   text-align: center;
+  padding-top: 20px;
 }
 .btnMarg {
   margin-left: 10px;

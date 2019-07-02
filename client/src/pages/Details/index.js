@@ -86,12 +86,12 @@ class Details extends React.Component {
 
   render() {
     return (
-      <div className="back">
+      <div className="backer">
         {this.props.loggedIn ? (
-          <div>
+          <div className="pad">
             {this.state.coll.map(item => (
               <div key={item.id}>
-                <h2>Collectible #{item.id} - {item.name}</h2>
+                <h2 className="hbk hbk3">Collectible #{item.id} - {item.name}</h2>
                 <div className="box" onChange={this.handleInputChange}>
                   <div className="row spc bdr">
                     <div className="col-md-6">

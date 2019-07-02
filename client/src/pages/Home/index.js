@@ -21,7 +21,7 @@ class Home extends React.Component {
                   <label htmlFor="email">Email</label>
                 </div>
               </div>
-              <br></br>
+              
               <div className="row justify-content-center">
                 <div className="col-sm-10">
                   <input type="password" className="form-control" name="password" autoComplete="off"></input>

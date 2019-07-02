@@ -1,3 +1,7 @@
+.wht:link, .wht:visited, .wht:hover, .wht:active {
+  text-decoration: none;
+  color: white;
+}
 .bg {
   background-color: purple;
 }

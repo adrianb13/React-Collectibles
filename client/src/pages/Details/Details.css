@@ -1,7 +1,13 @@
+.pad {
+  padding-top: 20px;
+}
 h2 {
   text-align: center;
-  padding-top: 20px;
+  padding: 5px;
   margin: 0 auto 20px auto;
+}
+.hbk3 {
+  width: 50%;
 }
 h4 {
   text-align: center;
@@ -51,6 +57,9 @@ h4 {
 }
 
 @media (max-width: 769px) {
+  .hbk3 {
+    width: 80%;
+  }
   .mgn {
     margin: 5px 0 5px 0;
   }

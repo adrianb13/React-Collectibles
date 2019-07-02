@@ -25,7 +25,6 @@ class App extends Component {
   };
 
   componentDidMount() {
-//    this.getUser();
   }
 
 // Pulls Existing User When Logging In

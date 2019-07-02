@@ -67,11 +67,11 @@ class Hello extends React.Component {
 
   render() {
     return (
-      <div className="back">
+      <div className="backer">
         {this.props.loggedIn ? (
           <div className="cenText">
-            <h1>Hello <b>{this.props.firstName}</b></h1>
-            <h3>Welcome To Your Collection</h3>
+            <h1 className="hbk">Hello <b>{this.props.firstName}</b></h1>
+            <h3 className="hbk hbk2">Welcome To Your Collection</h3>
             <br></br>
             
             <div className="row justify-content-sm-center">

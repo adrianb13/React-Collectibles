@@ -10,6 +10,7 @@ function Nav(props) {
         <div className="navbar-header">
           <Link to="/" className="navbar-brand">Collectibles Manager</Link>
         </div>
+        
         <nav pullright="true">
 
           {props.loggedIn ? (
@@ -22,8 +23,10 @@ function Nav(props) {
                 <button color="inherit" className="btn btn-dark rmgn">Register</button>
               </Link>
               <Link to="/">
-                <button color="inherit" className="btn btn-dark">Login</button>
+                <button color="inherit" className="btn btn-dark rmgn">Login</button>
               </Link>
+              <button color="inherit" className="btn btn-dark"><a className="wht" href="https://adrianb13.github.io/Responsive-Portfolio/portfolio.html">More By Adrian</a></button>
+
             </div>
           )}
         </nav>

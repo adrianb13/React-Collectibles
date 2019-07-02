@@ -1,5 +1,9 @@
+.back {
+  background: url("../../assets/img/Collectibles.jpg");
+  background-size: 100% auto;
+}
 .homeContainer {
-  width: 60%;
+  width: 50%;
   background: white;
   border-radius: 50px;
   margin: 2% auto 2% auto;
@@ -19,4 +23,11 @@ label {
 .ctr {
   text-align: center;
   margin: 0 auto 0 auto;
+}
+
+@media (max-width: 600px) {
+  .homeContainer {
+    width: 80%;
+    padding: 0 20px 0 20px;
+  }
 }
