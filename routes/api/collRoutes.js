@@ -4,12 +4,12 @@ const jwtMiddleware = require("../../lib/jwtMiddleware");
 
 router
   .route("/")
-  .post(jwtMiddleware, apiController.addCollectible);
+  .post(apiController.addCollectible);
 
 router
   .route("/:id")
-  .get(jwtMiddleware, apiController.getCollectible)
-  .put(jwtMiddleware, apiController.updateCollectible)
-  .delete(jwtMiddleware, apiController.deleteCollectible);
+  .get(apiController.getCollectible)
+  .put(apiController.updateCollectible)
+  .delete(apiController.deleteCollectible);
 
   module.exports = router;
