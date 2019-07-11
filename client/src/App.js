@@ -91,7 +91,6 @@ class App extends Component {
         })
         Auth.setToken(res.data.token);
         this.authenticated();
-        console.log(res.data.data);
       })
       .catch(err => console.log(err));
     } else {

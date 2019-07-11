@@ -1,6 +1,7 @@
 .backer {
   background: url("./assets/img/Collectibles.jpg");
   background-size: 100% auto;
+  min-height: -webkit-fill-available;
 }
 .center {
   text-align: center;
