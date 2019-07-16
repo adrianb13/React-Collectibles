@@ -107,7 +107,9 @@ Now to your MySQL Workbench.
 It should appear as so:
 
 ---MySQL Workbench Query Dashboard---
+
 DROP DATABASE IF EXISTS collectiblesDB;
+
 CREATE DATABASE collectiblesDB;
 
 -------------------
