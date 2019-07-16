@@ -38,13 +38,21 @@ https://dev.mysql.com/downloads/mysql/
 Within the root folder is a folder named "config". Inside that folder is the config.js file that will look as below.
  
 ---config.js---
+ 
  module.exports = {
+ 
   development: {
+ 
     username: process.env.MYSQL_USER,
+ 
     password: process.env.MYSQL_PASS,
+    
     database: process.env.MYSQL_DB,
+    
     host: "localhost",
+    
     dialect: "mysql"
+  
   },
   ....etc...
 
@@ -53,16 +61,25 @@ Within the root folder is a folder named "config". Inside that folder is the con
 Ideally, you will create a ".env" file in your root folder. And a ".gitignore" that include ".env" and "node modules" files and folders in your root folder.  This will ensure your credentials and unnecessary files are not pushed to your own github repo if you save this to your account.  The ".env" should mimic as follows:
 
 ---.gitignore---
+
 node_modules
+
 npm-debug.log
+
 .env
+
 ----------------
 
 ---.env---
-MYSQL_USER='<yourUsername>'
-MYSQL_PASS='<yourPassword>'
+
+MYSQL_USER='yourUsername'
+  
+MYSQL_PASS='yourPassword'
+
 MYSQL_DB='collectiblesDB'
-JWT_SECRET='<yourSecretKey>'
+
+JWT_SECRET='yourSecretKey'
+
 -----------
 
 Inside the "development" section, replace the username, password, and secret key with your own credentials.  
@@ -72,9 +89,13 @@ To get a random secret key, you can go here:
 https://www.grc.com/passwords.htm
 
 So as an example, your ".env" file will look like this:
+
 MYSQL_USER='user'
+
 MYSQL_PASS='password'
+
 MYSQL_DB='collectiblesDB'
+
 JWT_SECRET='XQZdampM3TbPku09Ut9526enCWPYWg7DGfpAwhZESMgrvcJCgMT3CW1n0eeqwIb' (do NOT use this for your own file).
 
 
