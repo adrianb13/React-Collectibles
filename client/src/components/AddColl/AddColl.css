@@ -6,6 +6,13 @@
   width: 70%;
   height: auto;
 }
+.hbk4 {
+  background: lightblue;
+  background-size: auto auto;
+  width: 45%;
+  margin: 0px auto 0 auto;
+  border-radius: 10px;
+}
 .spc {
   margin: 10px 0 10px 0;
 }
@@ -48,6 +55,9 @@ textarea {
     margin: 5px 0 5px 0;
   }
   .box2 {
+    width: 80%;
+  }
+  .hbk4 {
     width: 80%;
   }
 }

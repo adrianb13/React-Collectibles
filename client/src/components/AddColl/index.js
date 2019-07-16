@@ -4,14 +4,14 @@ import "./AddColl.css";
 function AddColl (props) {
   return (
     <div>
-      <h2>Add To Your Collection</h2>
+      <h2 className="hbk4">Add To Your Collection</h2>
       <div className="box2" onChange={props.handleInputChange}>
         <div className="row spc bdr2">
           <div className="col-md-6">
             <div className="wid3">Name:</div>
           </div>
           <div className="col-md-6">
-            <input className="mgn wid2 inp" type="text" name="name" placeholder="Kobe Bryant Signed Jersey"></input>
+            <input className="mgn wid2 inp" type="text" name="name" placeholder="Signed #24 Jersey"></input>
           </div>
         </div>
         <div className="row spc bdr2">
@@ -19,7 +19,7 @@ function AddColl (props) {
             <div className="wid3">Type:</div>
           </div>
           <div className="col-md-6">
-            <input className="mgn wid2 inp" type="text" name="type" placeholder="Sports Jersey"></input>
+            <input className="mgn wid2 inp" type="text" name="type" placeholder="Jersey"></input>
           </div>
         </div>
         <div className="row spc bdr2">
