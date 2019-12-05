@@ -1,4 +1,4 @@
-use collectiblesDB;
+use jwtTest;
 
 ALTER TABLE Users CHANGE COLUMN createdAt createdAt datetime NOT NULL DEFAULT CURRENT_TIMESTAMP;
 ALTER TABLE Users CHANGE COLUMN updatedAt updatedAt datetime NOT NULL DEFAULT CURRENT_TIMESTAMP;
@@ -6,6 +6,6 @@ ALTER TABLE Users CHANGE COLUMN updatedAt updatedAt datetime NOT NULL DEFAULT CU
 ALTER TABLE Collectibles CHANGE COLUMN createdAt createdAt datetime NOT NULL DEFAULT CURRENT_TIMESTAMP;
 ALTER TABLE Collectibles CHANGE COLUMN updatedAt updatedAt datetime NOT NULL DEFAULT CURRENT_TIMESTAMP;
 
-USE collectiblesDB; 
+USE jwtTest; 
 SELECT * FROM Users;
 SELECT * FROM Collectibles;
