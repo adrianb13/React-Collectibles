@@ -1,4 +1,5 @@
 .back {
+  height: 100vh;
   background: url("../../assets/img/Collectibles.jpg");
   background-size: 100% auto;
 }
