@@ -1,6 +1,9 @@
-DROP DATABASE IF EXISTS bcryptdb;
+/* DROP DATABASE IF EXISTS bcryptdb;
 CREATE DATABASE bcryptdb;
 
 USE bcryptdb;
 SELECT * FROM Users;
-SELECT * FROM Infos;
+SELECT * FROM Infos; */
+
+DROP DATABASE IF EXISTS jwtTest;
+CREATE DATABASE jwtTest;
