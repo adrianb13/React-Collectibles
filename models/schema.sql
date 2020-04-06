@@ -1,2 +1,6 @@
-DROP DATABASE IF EXISTS jwtTest;
-CREATE DATABASE jwtTest;
+DROP DATABASE IF EXISTS bcryptdb;
+CREATE DATABASE bcryptdb;
+
+USE bcryptdb;
+SELECT * FROM Users;
+SELECT * FROM Infos;
